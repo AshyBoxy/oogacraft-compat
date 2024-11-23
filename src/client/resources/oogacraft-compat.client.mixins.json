@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "xyz.ashyboxy.mc.oogacraft.compat.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"spectrum.SpectrumClientEventListenersMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

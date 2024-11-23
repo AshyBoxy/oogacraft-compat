@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "oogacraft-compat",
+	"version": "${version}",
+	"name": "Oogacraft Compat",
+	"description": "Providing some very basic compatibility between mods (usually just preventing weird crashes)",
+	"authors": [
+		"AshyBoxy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC-BY-NC-SA-4.0",
+	"icon": "assets/oogacraft-compat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.ashyboxy.mc.oogacraft.compat.Compat"
+		],
+		"client": []
+	},
+	"mixins": [
+		"oogacraft-compat.mixins.json",
+		{
+			"config": "oogacraft-compat.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"spectrum": "~1.8.0"
+	}
+}
